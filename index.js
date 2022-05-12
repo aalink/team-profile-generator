@@ -61,7 +61,7 @@ function managerPrompts() {
       assembledTeam.manager = manager;
       usedIDList.push(answers.id);
       constructTeam();
-      console.log(manager);
+      // console.log(manager);
     });
 }
 
@@ -111,9 +111,10 @@ function engineerPrompts() {
         answers.email,
         answers.github
       );
-      assembledTeam.engineer = engineer;
+      assembledTeam.engineers.push = engineer;
       usedIDList.push(answers.id);
-      console.log(engineer);
+      constructTeam();
+      // console.log(engineer);
     });
 }
 
@@ -161,9 +162,10 @@ function internPrompts() {
         answers.email,
         answers.School
       );
-      assembledTeam.intern = intern;
+      assembledTeam.interns.push = intern;
       usedIDList.push(answers.id);
-      console.log(intern);
+      constructTeam();
+      // console.log(intern);
     });
 }
 
