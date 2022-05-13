@@ -12,7 +12,7 @@ Repository Link: https://github.com/aalink/team-profile-generator
 
 Video demonstrations can be found in this folder: https://drive.google.com/drive/folders/1zuAKmeiCxX8_6eXDghR9hB5KlItf64qC?usp=sharing
 
-<!-- ![Project Screen Shot](/assets/example-file-path.png) -->
+![Team Profile Generator](/assets/team-profile-generator.png)
 
 ## Table of Contents
 
