@@ -1,11 +1,10 @@
 // Imports
 const fs = require("fs");
 const inquirer = require("inquirer");
+const Manager = require("./lib/Manager");
 const Engineer = require("./lib/Engineer");
 const Intern = require("./lib/Intern");
-const Manager = require("./lib/Manager");
 const makeHTML = require("./src/makeHTML");
-// const Htmlcode = require("./src/Htmlcode");
 
 const usedIDList = [];
 const assembledTeam = {
@@ -65,7 +64,6 @@ function managerPrompts() {
     });
 }
 
-// ✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅
 
 // Function to ask questions about an engineer
 function engineerPrompts() {
@@ -111,7 +109,7 @@ function engineerPrompts() {
         answers.email,
         answers.github
       );
-      assembledTeam.engineers.push = engineer;
+      assembledTeam.engineers.push(engineer);
       usedIDList.push(answers.id);
       constructTeam();
       // console.log(engineer);
@@ -162,14 +160,13 @@ function internPrompts() {
         answers.email,
         answers.School
       );
-      assembledTeam.interns.push = intern;
+      assembledTeam.interns.push(intern);
       usedIDList.push(answers.id);
       constructTeam();
       // console.log(intern);
     });
 }
 
-// ✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅
 // Function to assemble the team when prompts for employee type are completed.
 
 function constructTeam() {
@@ -196,9 +193,8 @@ function constructTeam() {
     });
 }
 
-// ✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅
 function writeTeamToFile() {
-  fs.writeFile("./dist/index3.html", "makeHTML(assembledTeam)", (err) => {
+  fs.writeFile("./dist/index.html", makeHTML(assembledTeam), (err) => {
     if (err) {
       console.error(err);
     }
