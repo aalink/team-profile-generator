@@ -10,7 +10,7 @@ A Node.js command-line application that takes in information about employees on 
 
 Repository Link: https://github.com/aalink/team-profile-generator
 
-Video demonstrations can be found in this folder: https://drive.google.com/drive/folders/1zuAKmeiCxX8_6eXDghR9hB5KlItf64qC?usp=sharing
+Video demonstrations and a sample HTML file can be found in this shared folder: https://drive.google.com/drive/folders/1zuAKmeiCxX8_6eXDghR9hB5KlItf64qC?usp=sharing
 
 ![Team Profile Generator](/assets/team-profile-generator.png)
 
